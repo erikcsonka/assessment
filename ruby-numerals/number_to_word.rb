@@ -105,9 +105,19 @@ class NumberToWord
 end
 
 if __FILE__ == $0
+  print '7 == '
   puts NumberToWord.convert(7)
+  print '42 == '
   puts NumberToWord.convert(42)
+  print '2001 == '
   puts NumberToWord.convert(2001)
+  print '1999 == '
   puts NumberToWord.convert(1999)
+  print '17999 == '
   puts NumberToWord.convert(17999)
 end
+
+print 'Enter a number: '
+number = gets.chomp
+print "Your number #{number} == "
+print NumberToWord.convert(number)
