@@ -99,7 +99,7 @@ class NumberToWord
     end
 
     def thousand_to_two_thousend?(digit_as_number, digit_count)
-      (digit_count - 3) % 3 == 0 && digit_as_number == 1
+      (digit_count - 3) % 3 == 0 && digit_as_number == 1 && digit_count < 5
     end  
   end
 end
