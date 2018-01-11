@@ -35,7 +35,7 @@ NTW = {
 
 class NumberToWord
   class << self
-
+    
     def convert(number)
       return 'zero' if number == 0
       word_representation_accumulator = []
@@ -102,4 +102,12 @@ class NumberToWord
       (digit_count - 3) % 3 == 0 && digit_as_number == 1
     end  
   end
+end
+
+if __FILE__ == $0
+  puts NumberToWord.convert(7)
+  puts NumberToWord.convert(42)
+  puts NumberToWord.convert(2001)
+  puts NumberToWord.convert(1999)
+  puts NumberToWord.convert(17999)
 end
